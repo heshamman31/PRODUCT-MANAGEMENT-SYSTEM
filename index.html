@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <!-- css file-->
+    <link rel="stylesheet" href="css/PMS.css">
+    <!-- font Aowesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>CRUDS</h1>
+            <p>product management system</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="name" placeholder="name">
+            <input type="number" id="price" placeholder="price">
+            <input type="number" id="taxes" placeholder="texes">
+            <input type="number" id="ads" placeholder="ads">
+            <input type="number" id="discount" placeholder="discount %">
+            <span id="total"></span>
+            <input type="number" id="count" placeholder="count (max:99)">
+            <input type="text" id="category" placeholder="category">
+            <button type="submit" id="create">Create</button>
+        </div>
+        <div class="outputs">
+            <input type="text" onkeyup="searchData(this.value)" id="search" placeholder="search">
+            <div class="search-by">
+                <button type="button" onclick="getSearchMood(this.id)" id="search-by-name">search by name</button>
+                <button type="button" onclick="getSearchMood(this.id)" id="search-by-category">search by category</button>
+            </div>
+            <button type="button" onclick="deleteAll()" id="delete-all">Delete All </button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="main.js"></script>
+</body>
+</html>

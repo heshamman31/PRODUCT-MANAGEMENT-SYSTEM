@@ -1,0 +1,140 @@
+/* start variables */
+:root{
+
+}
+/* end variables */
+/* start global rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Cairo', sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/* end global rules */
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.heading p{
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+input{
+    background-color: rgba(0, 0, 0, 0.678);
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+input:focus{
+    transform: scale(1.05);
+    background-color: black;
+}
+#price,#taxes,#ads,#discount{
+    width: 20%;
+    margin-right: 10px;
+}
+span{
+    background-color: rgb(250, 27, 27);
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    color: white;
+}
+span::before{
+    content: 'Total : ';
+}
+button{
+    display: block;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(145, 48, 19);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer; 
+    margin: auto auto 10px auto;
+    transition: 0.3s;
+}
+button:hover{
+    width: 100%;
+    letter-spacing: 2px;
+    background-color: rgb(112, 26, 0);
+}
+.search-by{
+    display: flex;
+    justify-content: space-between;
+}
+#search-by-name,#search-by-category{
+    width: 40%;
+}
+#search-by-name:hover,#search-by-category:hover{
+    letter-spacing: 0;
+}
+#delete-all{
+    width: 100%;
+    margin-top: 10px;
+}
+table{
+    width:100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+table thead{
+    font-size: 22px;
+}
+table tbody button:hover{
+    letter-spacing: 0;
+    width: 80%;
+}
