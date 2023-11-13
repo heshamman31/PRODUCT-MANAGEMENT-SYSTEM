@@ -75,6 +75,7 @@ input{
     font-size: 18px;
     outline: none;
 }
+
 input:focus{
     transform: scale(1.05);
     background-color: black;
@@ -137,4 +138,49 @@ table thead{
 table tbody button:hover{
     letter-spacing: 0;
     width: 80%;
+}
+@media (max-width: 767px){
+    #price,#taxes,#ads,#discount{
+        width: 24%;
+        margin-right: 0;
+    }
+    #discount::placeholder{
+        font-size: 12px;
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+    .heading{
+        font-size: 18px;
+    }
+    .heading p{
+        font-size: 16px;
+    }
+    span{
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    #search-by-name,#search-by-category{
+        font-size: 15px;
+        width: 47%;
+    }
+    table{
+        font-size: 12px;
+    }
+    table tr{
+        border-bottom: 1px solid;
+    }
+    thead th{
+        font-size: 14px;
+    }
+    #update,#delete{
+        font-size: 12px;
+        width: 50px;
+        height: 20px;
+        margin: 0;
+    }
+    .container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
