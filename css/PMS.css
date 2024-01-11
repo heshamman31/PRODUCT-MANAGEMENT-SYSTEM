@@ -103,11 +103,11 @@ button{
     color: white;
     border-radius: 20px;
     font-size: 20px;
-    cursor: pointer; 
     margin: auto auto 10px auto;
     transition: 0.3s;
 }
 button:hover{
+    cursor: pointer; 
     width: 100%;
     letter-spacing: 2px;
     background-color: rgb(112, 26, 0);
